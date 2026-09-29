@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #edf3f9 !important;
+  color: #243b5a !important;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 50px 8%;
+  text-align: center;
+}
+
+/* Main Heading */
+.app h1 {
+  color: #243b5a !important;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+/* Counter Card */
+.counter-box {
+  max-width: 620px;
+  margin: 0 auto 55px;
+  padding: 35px;
+  background: #ffffff !important;
+  border: 1px solid #d5e0eb;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(48, 73, 100, 0.12);
+}
+
+.counter-box h2 {
+  color: #243b5a !important;
+  font-size: 42px;
+  margin: 0 0 25px;
+}
+
+/* Button */
+button {
+  background: #5274a8 !important;
+  color: #ffffff !important;
+  border: none;
+  padding: 13px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(82, 116, 168, 0.25);
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #3f6092 !important;
+  transform: translateY(-2px);
+}
+
+/* Upcoming Events Heading */
+.app > h2 {
+  color: #304d72 !important;
+  font-size: 27px;
+  margin-bottom: 25px;
+}
+
+/* Event Cards Container */
+.events {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Event Card */
+.event-card {
+  position: relative;
+  width: 280px;
+  min-height: 180px;
+  padding: 30px;
+  background: #ffffff !important;
+  border: 1px solid #d5e0eb;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 22px rgba(48, 73, 100, 0.10);
+  transition: 0.25s;
+  overflow: hidden;
+}
+
+/* Left Accent */
+.event-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 7px;
+  height: 100%;
+  background: #6689bd;
+}
+
+/* Event Title */
+.event-card h2 {
+  color: #2b4568 !important;
+  font-size: 22px;
+  margin: 0;
+}
+
+/* Hover */
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(48, 73, 100, 0.16);
+  border-color: #b8c9de;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .app {
+    padding: 35px 5%;
+  }
+
+  .events {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-card {
+    width: 90%;
+  }
+}
